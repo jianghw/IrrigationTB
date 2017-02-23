@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/search_view_hit_bg"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/ll_fragment_su_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_fragment_su_list_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="所有患者"
+            android:textSize="?attr/fontSize_2" />
+
+
+        <TextView
+            android:id="@+id/tv_fragment_su_list_item_size"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/tv_fragment_su_list_item_name"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="10人"
+            android:textColor="@color/module_segment_line_green"
+            android:textSize="?attr/fontSize_1" />
+
+        <ImageView
+            android:id="@+id/imgView_userInfo_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/userInfo_img_marginRight"
+            android:src="@drawable/ic_instructions_right" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_oet_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_osiEdit"
+        android:background="@color/activity_editText_line_gray" />
+</LinearLayout>

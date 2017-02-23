@@ -1,0 +1,111 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        Customize your theme here.
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!-- 字体大小 theme -->
+    <style name="Theme_Small">
+        <item name="fontSize_1">12sp</item>
+        <item name="fontSize_2">14sp</item>
+        <item name="fontSize_3">18sp</item>
+    </style>
+
+    <style name="Theme_Medium">
+        <item name="fontSize_1">14sp</item>
+        <item name="fontSize_2">16sp</item>
+        <item name="fontSize_3">20sp</item>
+    </style>
+
+    <style name="Theme_Large">
+        <item name="fontSize_1">16sp</item>
+        <item name="fontSize_2">18sp</item>
+        <item name="fontSize_3">22sp</item>
+    </style>
+
+    <!--设置-全屏-->
+    <style name="NoTitleFullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:label">@string/app_name</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--设置activity 基础项-->
+    <style name="BaseActivity" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:configChanges">keyboardHidden|orientation|screenSize</item>
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:label">@string/app_name</item>
+    </style>
+    <!--main-medicine正文字体-->
+    <style name="MedicineContentText">
+        <item name="android:textColor">@color/activity_textColor_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?attr/fontSize_2</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <!--main-字体-->
+    <style name="NormalText">
+        <item name="android:textColor">@color/activity_textColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">?attr/fontSize_2</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+    <!--main-me正文字体-->
+    <style name="MeContentText">
+        <item name="android:textColor">@color/activity_textColor</item>
+        <item name="android:textSize">?attr/fontSize_2</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--dialog 的样式-->
+    <style name="PhoneDialogStyle" parent="Theme.AppCompat.DialogWhenLarge">
+        <item name="android:windowAnimationStyle">@style/bottomStyle</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="bottomStyle">
+        <item name="android:windowEnterAnimation">@anim/bottom_pup_anim_out</item>
+        <item name="android:windowExitAnimation">@anim/bottom_pup_anim_in</item>
+    </style>
+
+    <style name="AboutText">
+        <item name="android:textColor">@color/activity_textColor</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/activity_layout_height</item>
+        <item name="android:textSize">?attr/fontSize_2</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:background">@drawable/bg_me_control_white</item>
+    </style>
+
+</resources>

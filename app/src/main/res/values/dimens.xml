@@ -1,0 +1,92 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!--正文字体-->
+    <dimen name="activity_textSize_normal">16sp</dimen>
+    <!--行高-->
+    <dimen name="activity_layout_height">48dp</dimen>
+    <!--actionBar高-->
+    <dimen name="activity_actionBar_height">50dp</dimen>
+    <!--线高-->
+    <dimen name="activity_line_height">1px</dimen>
+
+    <!--SplashActivity-->
+    <dimen name="aty_welcome_marginTop">100dp</dimen>
+
+    <!--actionBar-->
+    <dimen name="actionBar_imgView_padding">18dp</dimen>
+    <dimen name="actionBar_scan_padding">16dp</dimen>
+    <dimen name="actionBar_line_marginTop">12dp</dimen>
+    <dimen name="actionBar_tv_paddingLeft">8dp</dimen>
+
+    <!--自定义view OsieditText-->
+    <dimen name="oet_cb_width">24dp</dimen>
+    <dimen name="oet_cb_height">18dp</dimen>
+
+    <!--自定义view userInfoText-->
+    <dimen name="userInfo_img_marginRight">22dp</dimen>
+    <dimen name="userInfo_tv_marginRight">2dp</dimen>
+
+    <!--emailPassActivity-->
+    <dimen name="aty_email_marginTop">60dp</dimen>
+    <!--phoneRegisterActivity-->
+    <dimen name="aty_pRegister_marginBottom">20dp</dimen>
+    <dimen name="aty_eRegister_marginBottom">80dp</dimen>
+    <dimen name="aty_pRegister_marginLeft">8dp</dimen>
+
+    <!--verificationCodeActivity-->
+    <dimen name="aty_verCode_textSize">40sp</dimen>
+    <dimen name="aty_verCode_marginLeft">8dp</dimen>
+
+    <!--bindBoxActivity-->
+    <dimen name="aty_gsm_marginTop">40dp</dimen>
+
+    <!--fillUserInfoActivity-->
+    <dimen name="aty_uInfo_imgView_width">60dp</dimen>
+    <dimen name="aty_uInfo_imgView_marginTop">16dp</dimen>
+    <dimen name="aty_interval_marginTop">1px</dimen>
+
+    <!--medicineFragment-->
+    <dimen name="fgt_medicine_next_paddingTop">4dp</dimen>
+    <dimen name="fgt_medicine_follow_height">64dp</dimen>
+
+    <!--recordFragment-->
+    <dimen name="fgt_record_left_width">60dp</dimen>
+    <dimen name="fgt_record_week_height">40dp</dimen>
+    <dimen name="fgt_record_date_height">240dp</dimen>
+
+    <!--meFragment-->
+    <dimen name="fgt_me_img_height">60dp</dimen>
+    <dimen name="fgt_me_rl_height">80dp</dimen>
+    <dimen name="fgt_me_qrCode_height">40dp</dimen>
+
+    <!--ptMyInfoActivity-->
+    <dimen name="aty_myInfo_marginTop">16dp</dimen>
+    <!--ptMyDirctorActivity-->
+    <dimen name="aty_dir_marginTop">16dp</dimen>
+    <dimen name="aty_dir_lv_marginTop">24dp</dimen>
+    <!--ptnewDirctorActivity-->
+    <dimen name="aty_newDir_marginTop">16dp</dimen>
+    <dimen name="aty_newDir_marginLeft">8dp</dimen>
+
+    <!--页面第一行至顶距离-->
+    <dimen name="page_first_controls_marginTop">16dp</dimen>
+    <!--页面第二模块至上距离-->
+    <dimen name="page_second_module_marginTop">32dp</dimen>
+    <!--下一个控件至上距离-->
+    <dimen name="next_control_marginTop">8dp</dimen>
+    <!--大的btn控件左右外距-->
+    <dimen name="big_btn_marginLeft">8dp</dimen>
+    <!--右指向标右外距-->
+    <dimen name="right_beacon_marginRight">16dp</dimen>
+    <!--分割线左外距-->
+    <dimen name="divider_line_marginLeft">16dp</dimen>
+
+    <!--督导员历史药物统计的特殊字体-->
+    <dimen name="tack_pill_textSize">10sp</dimen>
+
+
+</resources>

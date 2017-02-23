@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_su_look"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal"
+        android:text="查看" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <com.cjyun.tb.supervisor.custom.PicChartView
+            android:layout_marginLeft="-30dp"
+            android:id="@+id/pie_su"
+            android:layout_width="match_parent"
+            android:layout_height="235dp" />
+
+        <TextView
+            android:id="@+id/dialog_ptbox_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:text="药盒ID"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前周期"
+            android:textColor="@color/module_segment_line_green"
+            android:textSize="?attr/fontSize_1" />
+
+        <TextView
+            android:id="@+id/dialog_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="2016-4-16"
+            android:textColor="@color/module_segment_line_green"
+            android:textSize="?attr/fontSize_1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="至"
+            android:textColor="@color/module_segment_line_green"
+            android:textSize="?attr/fontSize_1" />
+
+        <TextView
+            android:id="@+id/dialog_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="2015-5-16"
+            android:textColor="@color/module_segment_line_green"
+            android:textSize="?attr/fontSize_1" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/activity_background_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+
+        android:id="@+id/iv_welcome_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/aty_welcome_marginTop"
+        android:background="@drawable/ic_welcome_logo"/>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_welcome_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/aty_welcome_marginTop"
+        android:background="@drawable/bg_welcome_selector">
+
+        <RelativeLayout
+            android:id="@+id/rl_patient"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_layout_height"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_welcome_patient">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/aty_welcome_patient"
+                android:textColor="@color/activity_controls_normal"
+                android:textSize="@dimen/activity_textSize_normal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right_beacon_marginRight"
+                android:src="@drawable/ic_instructions_right"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_line_height"
+            android:layout_below="@+id/rl_patient"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:layout_marginRight="@dimen/divider_line_marginLeft"
+            android:background="@color/activity_controls_normal"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_director"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_layout_height"
+            android:layout_below="@+id/img_line"
+            android:background="@drawable/bg_welcome_patient">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/aty_welcome_director"
+                android:textColor="@color/activity_controls_normal"
+                android:textSize="@dimen/activity_textSize_normal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/right_beacon_marginRight"
+                android:src="@drawable/ic_instructions_right"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

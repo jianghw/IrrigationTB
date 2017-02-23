@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:background="@color/activity_actionBar_black">
+
+        <LinearLayout
+            android:id="@+id/ll_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@drawable/bg_actionbar_all"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/actionBar_imgView_padding"
+                android:src="@drawable/ic_actionbar_back" />
+
+            <ImageView
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+            android:layout_toRightOf="@+id/ll_actionBar_back"
+            android:gravity="center"
+            android:text="@string/tv_fgt_font"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textView_big"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:gravity="center"
+            android:text="大号字体"
+            android:textColor="@color/activity_textColor"
+            android:textSize="?attr/fontSize_3"/>
+
+        <ImageView
+            android:id="@+id/img_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:padding="10dp"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_font_choose"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textView_normal"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="正常字体"
+            android:textSize="?attr/fontSize_2"
+            android:textColor="@color/activity_textColor"/>
+
+        <ImageView
+            android:id="@+id/img_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginRight="8dp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_font_choose"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/textView_small"
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+        <TextView
+            android:textColor="@color/activity_textColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:text="小号字体"
+            android:textSize="?attr/fontSize_1"/>
+
+        <ImageView
+            android:id="@+id/img_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/ic_font_choose"/>
+    </RelativeLayout>
+</LinearLayout>

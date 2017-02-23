@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/rl_osiEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_osiEdit_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_weight="3"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/activity_textColor"
+            android:textSize="?attr/fontSize_2"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/imgView_osiEdit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:src="@drawable/ic_search_title"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/edtTxt_osiEdit_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/activity_textColor"
+            android:textColorHint="@color/activity_hint_gray"
+            android:textSize="?attr/fontSize_2"/>
+
+        <CheckBox
+            android:id="@+id/cBox_osiEdit_eye"
+            android:layout_width="@dimen/oet_cb_width"
+            android:layout_height="@dimen/oet_cb_height"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_marginRight="@dimen/big_btn_marginLeft"
+            android:background="@drawable/bg_eye_cb"
+            android:button="@null"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_oet_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/rl_osiEdit"
+        android:background="@color/activity_editText_line_gray"/>
+
+</RelativeLayout>

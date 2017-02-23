@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:background="@color/activity_actionBar_black">
+
+        <LinearLayout
+            android:id="@+id/ll_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@drawable/bg_actionbar_all"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/actionBar_imgView_padding"
+                android:src="@drawable/ic_actionbar_back"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+            android:layout_toRightOf="@+id/ll_actionBar_back"
+            android:gravity="center"
+            android:text="@string/aty_bindBox_addBox"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3"/>
+
+        <TextView
+            android:id="@+id/tv_title_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/actionBar_imgView_padding"
+            android:layout_toLeftOf="@+id/rl_actionBar_right"
+            android:gravity="center"
+            android:text="@string/aty_bindBox_jump"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_2"/>
+
+        <LinearLayout
+            android:id="@+id/rl_actionBar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgView_separator"
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black"/>
+
+            <ImageView
+                android:id="@+id/imgView_scan"
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_actionbar_all"
+                android:padding="@dimen/actionBar_scan_padding"
+                android:src="@drawable/ic_actionbar_scan"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <com.cjyun.tb.patient.custom.OsiEditText
+        android:id="@+id/oEdit_bindBox_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/page_first_controls_marginTop"/>
+
+    <com.cjyun.tb.patient.custom.OsiEditText
+        android:id="@+id/oEdit_bindBox_SN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/next_control_marginTop"/>
+
+    <TextView
+        android:id="@+id/tv_bindBox_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="@dimen/big_btn_marginLeft"
+        android:layout_marginTop="@dimen/next_control_marginTop"
+        android:text="@string/aty_bindBox_statement"
+        android:textColor="@color/activity_hint_textColor"
+        android:textSize="?attr/fontSize_1"/>
+
+    <Button
+        android:id="@+id/btn_bindBox_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginLeft="@dimen/big_btn_marginLeft"
+        android:layout_marginRight="@dimen/big_btn_marginLeft"
+        android:layout_marginTop="@dimen/page_second_module_marginTop"
+        android:background="@drawable/bg_login_btn"
+        android:text="@string/aty_bindBox_next"
+        android:textColor="@color/activity_textColor_white"
+        android:textSize="?attr/fontSize_3"/>
+</LinearLayout>

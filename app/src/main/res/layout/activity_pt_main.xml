@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_actionBar"
+        layout="@layout/include_actionbar"/>
+
+    <FrameLayout
+        android:id="@+id/fl_ptMain_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabBottom_ptMain"
+        android:layout_below="@+id/include_actionBar"/>
+
+    <com.cjyun.tb.patient.custom.UITableBottom
+        android:id="@+id/tabBottom_ptMain"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"/>
+</RelativeLayout>

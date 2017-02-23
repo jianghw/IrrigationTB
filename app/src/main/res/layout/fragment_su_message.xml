@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:background="@color/activity_actionBar_black">
+
+        <LinearLayout
+            android:id="@+id/ll_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@drawable/bg_actionbar_all"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/actionBar_imgView_padding"
+                android:src="@drawable/ic_actionbar_back" />
+
+            <ImageView
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+            android:layout_toRightOf="@+id/ll_actionBar_back"
+            android:gravity="center"
+            android:text="@string/mynews"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3" />
+
+        <TextView
+            android:id="@+id/tv_title_right_redact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginRight="@dimen/abc_dropdownitem_text_padding_right"
+            android:text="@string/redact"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_1" />
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/lv_su_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+</LinearLayout>

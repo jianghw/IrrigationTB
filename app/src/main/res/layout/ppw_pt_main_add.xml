@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ly_ppw_main_box"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_ppw_main_add"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_ppw_main_box"/>
+
+        <TextView
+            style="@style/MedicineContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aty_ptMain_addBox"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/add_popup_pressed"/>
+
+    <LinearLayout
+        android:id="@+id/ly_ppw_main_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_ppw_main_add"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_ppw_main_info"/>
+
+        <TextView
+            style="@style/MedicineContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aty_ptMain_modifyInfo"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/add_popup_pressed"/>
+
+    <LinearLayout
+        android:id="@+id/ly_ppw_main_dir"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_ppw_main_add"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_ppw_main_dir"/>
+
+        <TextView
+            style="@style/MedicineContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_reset_password"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_actionBar"
+        layout="@layout/include_actionbar"/>
+
+    <com.cjyun.tb.patient.custom.OsiEditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginTop="@dimen/aty_newDir_marginTop"/>
+
+    <ViewStub
+        android:id="@+id/vs_nDir_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/viewstub_new_dir_tv"/>
+
+    <ViewStub
+        android:id="@+id/vs_nDir_verify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout="@layout/viewstub_new_dir_verity"/>
+
+</LinearLayout>

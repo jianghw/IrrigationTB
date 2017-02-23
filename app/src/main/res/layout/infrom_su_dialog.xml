@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@color/dialog_normal"
+        android:gravity="center"
+        android:text="@string/suMainActivity_dialog_infrom"
+        android:textColor="@color/activity_textColor_white"
+        android:textSize="?attr/fontSize_3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:text="XXX督导员你好：" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="5dp"
+        android:text="您管理的患者还有几天就到复诊时间了" />
+
+    <Button
+        android:id="@+id/bt_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_dialog_bt"
+        android:text="@string/suMainActivity_dialog_Isee"
+        android:textColor="@color/activity_textColor_white"
+        android:textSize="?attr/fontSize_2" />
+
+
+</LinearLayout>

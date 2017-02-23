@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include
+        android:id="@+id/include_actionBar"
+        layout="@layout/include_actionbar"/>
+
+    <TextView
+        android:layout_margin="@dimen/aty_myInfo_marginTop"
+        android:text="oxxoxxoxx"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_info_name"
+        android:textSize="?attr/fontSize_3"
+        android:textColor="@color/uiBottom_green_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="oxxoxxoxx"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_info_address"
+        android:textSize="?attr/fontSize_2"
+        android:textColor="@color/activity_textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imgView_info_qrCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="oxxoxxoxx"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_info_id"
+        android:textSize="?attr/fontSize_3"
+        android:textColor="@color/activity_textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

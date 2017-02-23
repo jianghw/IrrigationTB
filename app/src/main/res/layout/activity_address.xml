@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/include_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:background="@color/activity_actionBar_black">
+
+        <LinearLayout
+            android:id="@+id/ll_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@drawable/bg_actionbar_all"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/actionBar_imgView_padding"
+                android:src="@drawable/ic_actionbar_back"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+            android:layout_toRightOf="@+id/ll_actionBar_back"
+            android:gravity="center"
+            android:text="完善地址"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3"/>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已选："
+                android:textColor="@color/tv_hint_prompt"
+                android:textSize="?attr/fontSize_2"/>
+
+            <TextView
+                android:id="@+id/title_province"
+                style="@style/NormalText"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/title_city"
+                style="@style/NormalText"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/title_district"
+                style="@style/NormalText"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/title_street"
+                style="@style/NormalText"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/activity_controls_normal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/address_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/lr_details_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/activity_layout_height"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.cjyun.tb.patient.custom.OsiEditText
+                android:id="@+id/oEdit_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/page_first_controls_marginTop"/>
+
+            <com.cjyun.tb.patient.custom.OsiEditText
+                android:id="@+id/oEdit_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/page_first_controls_marginTop"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_no"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginLeft="@dimen/big_btn_marginLeft"
+                    android:layout_marginRight="@dimen/big_btn_marginLeft"
+                    android:layout_marginTop="@dimen/page_second_module_marginTop"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_btn"
+                    android:text="取消"
+                    android:textColor="@color/activity_textColor_white"
+                    android:textSize="?attr/fontSize_3"/>
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginLeft="@dimen/big_btn_marginLeft"
+                    android:layout_marginRight="@dimen/big_btn_marginLeft"
+                    android:layout_marginTop="@dimen/page_second_module_marginTop"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_login_btn"
+                    android:text="保存地址"
+                    android:textColor="@color/activity_textColor_white"
+                    android:textSize="?attr/fontSize_3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

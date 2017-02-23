@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@color/activity_actionBar_black">
+
+    <LinearLayout
+        android:id="@+id/ll_actionBar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/activity_actionBar_height"
+            android:layout_height="@dimen/activity_actionBar_height"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:padding="@dimen/actionBar_imgView_padding"
+            android:background="@drawable/bg_actionbar_all"
+            android:src="@drawable/ic_actionbar_back"/>
+
+        <ImageView
+            android:layout_width="@dimen/activity_line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+            android:layout_marginTop="@dimen/actionBar_line_marginTop"
+            android:background="@color/actionBar_line_black"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_toRightOf="@+id/ll_actionBar_back"
+        android:id="@+id/tv_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+        android:textColor="@color/activity_textColor_white"
+        android:textSize="?attr/fontSize_3"/>
+
+    <TextView
+        android:id="@+id/tv_title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/activity_textColor_white"
+        android:textSize="?attr/fontSize_3"/>
+
+    <LinearLayout
+        android:id="@+id/rl_actionBar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:background="@color/actionBar_line_black"
+            android:id="@+id/imgView_separator"
+            android:layout_width="@dimen/activity_line_height"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+            android:layout_marginTop="@dimen/actionBar_line_marginTop"/>
+
+        <ImageView
+            android:background="@drawable/bg_actionbar_all"
+            android:id="@+id/imgView_scan"
+            android:layout_width="@dimen/activity_actionBar_height"
+            android:layout_height="match_parent"
+            android:padding="@dimen/actionBar_scan_padding"
+            android:src="@drawable/ic_actionbar_scan"
+            android:visibility="visible"/>
+
+        <TextView
+            android:background="@drawable/bg_actionbar_all"
+            android:id="@+id/tv_title_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/actionBar_tv_paddingLeft"
+            android:paddingRight="@dimen/actionBar_tv_paddingLeft"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_2"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_toLeftOf="@+id/rl_actionBar_right"
+        android:background="@drawable/bg_actionbar_all"
+        android:id="@+id/tv_title_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/aty_bindBox_jump"
+        android:paddingLeft="@dimen/actionBar_tv_paddingLeft"
+        android:paddingRight="@dimen/actionBar_tv_paddingLeft"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/actionBar_tv_paddingLeft"
+        android:textColor="@color/activity_textColor_white"
+        android:textSize="?attr/fontSize_2"
+        android:visibility="gone"/>
+</RelativeLayout>

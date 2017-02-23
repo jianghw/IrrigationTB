@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_refresh_tcak"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="242dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_tack_pill_ll_back"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fm_su_bt_show_statistics"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="1dp"
+                    android:background="@drawable/bg_tack_pill_btn_left_nor"
+                    android:padding="1dp"
+                    android:text="@string/fragment_history_tack_pill_statistics"
+                    android:textColor="@color/activity_textColor_white"
+                    android:textSize="?attr/fontSize_1" />
+
+                <Button
+                    android:id="@+id/fm_su_bt_show_cycle"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_tack_pills_btn_white"
+                    android:padding="1dp"
+                    android:text="@string/fragment_history_tack_pill_cycle"
+                    android:textSize="?attr/fontSize_1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <include
+                android:id="@+id/fm_include_history_tack_pills"
+                layout="@layout/include_history_tack_pills"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/fm_su_ll_statistics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.cjyun.tb.supervisor.custom.PicChartView
+                    android:id="@+id/pie_su"
+                    android:layout_width="match_parent"
+                    android:layout_height="235dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_su_tp_pill_case"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="40dp"
+                    android:text="药盒ID"
+                    android:textSize="@dimen/tack_pill_textSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/pie_su"
+                    android:background="@color/module_segment_line_gray_shallow"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_history_more_record"
+                        android:textSize="?attr/fontSize_1" />
+
+                    <TextView
+                        android:id="@+id/tv_su_cjy_website"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/fragment_history_cjy_vaeCn"
+                        android:textColor="@color/dialog_normal"
+                        android:textSize="?attr/fontSize_1" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_actionBar"
+        layout="@layout/include_actionbar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@color/module_segment_line_gray_shallow" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/add_select" />
+
+        <EditText
+            android:id="@+id/edit_su_visit_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/suVisitActivity_news"
+            android:textSize="?attr/fontSize_1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/module_segment_line_gray_shallow" />
+
+    <RelativeLayout
+        android:id="@+id/rl_su_addvisit_date"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/suVisitActivity_visit_time"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <ImageView
+            android:id="@+id/iv_su_visit_right_boult"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_me_right" />
+
+        <TextView
+            android:id="@+id/tv_su_visit_date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_su_visit_right_boult"
+            android:gravity="center"
+            android:text="2016年4月16日"
+            android:textSize="?attr/fontSize_1" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_segment_line_gray_shallow"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="302dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_tack_pill_ll_back"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fm_su_bt_show_come"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/bg_tack_pill_btn_left_nor"
+                android:padding="1dp"
+                android:text="@string/suVisitActivity_Come_to_visit"
+                android:textColor="@color/activity_textColor_white"
+                android:textSize="?attr/fontSize_1" />
+
+            <Button
+                android:id="@+id/fm_su_bt_show_telephone"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_tack_pills_btn_white"
+                android:padding="1dp"
+                android:text="@string/suVisitActivity_telephone_visit"
+                android:textSize="?attr/fontSize_1" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_su_commit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_dialog_bt"
+            android:gravity="center"
+            android:text="@string/suVisitActivity_commit"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3" />
+    </LinearLayout>
+</LinearLayout>

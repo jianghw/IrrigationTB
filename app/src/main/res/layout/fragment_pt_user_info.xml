@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jianghw="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:background="@color/activity_actionBar_black">
+
+        <LinearLayout
+            android:id="@+id/ll_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@drawable/bg_actionbar_all"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/actionBar_imgView_padding"
+                android:src="@drawable/ic_actionbar_back" />
+
+            <ImageView
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+            android:layout_toRightOf="@+id/ll_actionBar_back"
+            android:gravity="center"
+            android:text="@string/fgt_userInfo_tv_title"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgView_user_head"
+        android:layout_width="@dimen/aty_uInfo_imgView_width"
+        android:layout_height="@dimen/aty_uInfo_imgView_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/aty_uInfo_imgView_marginTop"
+        android:layout_marginTop="@dimen/aty_uInfo_imgView_marginTop"
+        android:src="@drawable/ic_user_info_head" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_box" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_user" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_age" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_gender" />
+
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_phone" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_email" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_guardian1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_guardian1" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_guardian2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="rect"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_guardian2" />
+
+                <com.cjyun.tb.patient.custom.UserInfoText
+                    android:id="@+id/userTv_fill_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_marginTop="@dimen/aty_interval_marginTop"
+                    jianghw:endState="square"
+                    jianghw:tvSign="false"
+                    jianghw:tvTitle="@string/aty_userInfo_address" />
+
+                <Button
+                    android:id="@+id/btn_fill_enter"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/activity_layout_height"
+                    android:layout_margin="@dimen/big_btn_marginLeft"
+                    android:background="@drawable/bg_login_btn"
+                    android:text="@string/aty_userInfo_enter"
+                    android:textColor="@color/activity_textColor_white"
+                    android:textSize="?attr/fontSize_3" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

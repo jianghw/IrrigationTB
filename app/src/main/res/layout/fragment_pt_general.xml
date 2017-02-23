@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:background="@color/activity_actionBar_black">
+
+        <LinearLayout
+            android:id="@+id/ll_actionBar_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="@dimen/activity_actionBar_height"
+                android:background="@drawable/bg_actionbar_all"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/actionBar_imgView_padding"
+                android:src="@drawable/ic_actionbar_back"/>
+
+            <ImageView
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/actionBar_tv_paddingLeft"
+            android:layout_toRightOf="@+id/ll_actionBar_back"
+            android:gravity="center"
+            android:text="@string/tv_fgt_general"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relay_font_size"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginTop="@dimen/page_first_controls_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <TextView
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:text="@string/tv_font_size"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/divider_line_marginLeft"
+        android:layout_marginRight="@dimen/divider_line_marginLeft"
+        android:background="@color/module_segment_line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/relay_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+
+        <TextView
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:text="@string/tv_check_update"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/divider_line_marginLeft"
+        android:layout_marginRight="@dimen/divider_line_marginLeft"
+        android:background="@color/module_segment_line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/relay_about_us"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+
+        <TextView
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:text="@string/tv_about_us"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relay_quite_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginTop="@dimen/page_second_module_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/tv_quite_login"
+            android:textColor="@color/viewfinder_laser"
+            android:textSize="?attr/fontSize_2"/>
+    </RelativeLayout>
+</LinearLayout>

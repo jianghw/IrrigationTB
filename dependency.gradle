@@ -1,0 +1,17 @@
+
+ext {
+    applicationId= "com.cjyun.tb"
+    compileSdkVersion = 21
+    buildToolsVersion = "21.0.1"
+    minSdkVersion = 15
+    targetSdkVersion = 21
+    versionCode = 1
+    versionName = "1.0.0"
+
+    abortOnLintError = false
+    checkLintRelease = false
+    useJack = false
+    abortOnLintError = false
+
+    javaVersion = JavaVersion.VERSION_1_8
+}

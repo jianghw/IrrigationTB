@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/activity_textColor_white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_userInfo_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/divider_line_marginLeft"
+        android:gravity="center"
+        android:text="*"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/tv_userInfo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_userInfo_sign"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/activity_textColor"
+        android:textSize="?attr/fontSize_2"/>
+
+    <TextView
+        android:id="@+id/tv_userInfo_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/divider_line_marginLeft"
+        android:layout_toRightOf="@+id/tv_userInfo_title"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/activity_textColor"
+        android:textSize="?attr/fontSize_2"/>
+
+    <ImageView
+        android:id="@+id/imgView_userInfo_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/userInfo_img_marginRight"
+        android:gravity="center"
+        android:src="@drawable/ic_instructions_right"/>
+
+    <ImageView
+        android:id="@+id/imgView_userInfo_contact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/right_beacon_marginRight"
+        android:gravity="center"
+        android:background="@drawable/bg_user_info_iv"/>
+</RelativeLayout>

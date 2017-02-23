@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_actionBar"
+        layout="@layout/include_actionbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dir_myDir"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginTop="@dimen/aty_dir_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <ImageView
+            android:id="@+id/img_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_me_director"/>
+
+        <TextView
+            android:id="@+id/tv_me_dir"
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:layout_toRightOf="@+id/img_director"
+            android:text="@string/fgt_me_director"/>
+
+        <ImageView
+            android:id="@+id/imgView_dir_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:layout_toRightOf="@+id/tv_me_dir"
+            android:src="@drawable/ic_instructions_right"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/aty_dir_lv_marginTop"/>
+</LinearLayout>

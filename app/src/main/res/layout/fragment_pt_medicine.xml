@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".patient.ui.main.PtMainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_layout_height"
+                android:layout_marginTop="@dimen/page_first_controls_marginTop"
+                android:background="@color/activity_controls_normal">
+
+                <TextView
+                    android:id="@+id/tv_medic_date"
+                    style="@style/MedicineContentText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    tools:text="2016/06/16"/>
+
+                <!--  <TextView
+                      android:id="@+id/tv_medic_week"
+                      style="@style/MedicineContentText"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:layout_toRightOf="@+id/tv_medic_date"/>-->
+
+                <TextView
+                    android:id="@+id/tv_medic_name"
+                    style="@style/MedicineContentText"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_medic_date"
+                    tools:text="王二麻子"/>
+
+                <ImageView
+                    android:id="@+id/imgView_medic_online"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/big_btn_marginLeft"
+                    android:layout_toLeftOf="@+id/tv_medic_online"
+                    android:src="@drawable/ic_medic_unline"/>
+
+                <TextView
+                    android:id="@+id/tv_medic_online"
+                    style="@style/MedicineContentText"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    tools:text="药盒在线"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_set_drug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/page_second_module_marginTop"
+                android:background="@drawable/bg_login_btn"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginBottom="@dimen/next_control_marginTop"
+                    android:layout_marginTop="@dimen/next_control_marginTop"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imgView_medic_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/ic_frg_medic_time"/>
+
+                    <TextView
+                        android:id="@+id/tv_medic_time"
+                        style="@style/MedicineContentText"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/next_control_marginTop"
+                        android:text="@string/no_time"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_medic_prompt"
+                    style="@style/MedicineContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:text="@string/fgt_medic_prompt"
+                    android:textColor="@color/activity_textColor_white"
+                    android:visibility="visible"/>
+
+                <ListView
+                    android:id="@+id/lv_medic_drug"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/right_beacon_marginRight"
+                        android:src="@drawable/ic_instructions_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/aty_interval_marginTop"
+                android:background="@color/activity_controls_normal"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/fgt_medicine_next_paddingTop"
+                android:paddingTop="@dimen/fgt_medicine_next_paddingTop">
+
+                <TextView
+                    style="@style/MedicineContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_next_drug"/>
+
+                <TextView
+                    android:id="@+id/tv_medic_next"
+                    style="@style/MedicineContentText"
+                    android:text="--:--:--"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_medic_follow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fgt_medicine_follow_height"
+                android:layout_marginTop="@dimen/page_second_module_marginTop"
+                android:background="@drawable/bg_me_control_white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/fgt_medicine_next_paddingTop"
+                android:paddingTop="@dimen/fgt_medicine_next_paddingTop">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_medic_visit"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="@string/fgt_medic_interview"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/right_beacon_marginRight"
+                        android:src="@drawable/ic_instructions_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="@dimen/divider_line_marginLeft"
+                android:layout_marginRight="@dimen/divider_line_marginLeft"
+                android:background="@color/module_segment_line_gray"/>
+
+            <LinearLayout
+                android:id="@+id/ll_medic_visit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fgt_medicine_follow_height"
+                android:background="@drawable/bg_me_control_white"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/fgt_medicine_next_paddingTop"
+                android:paddingTop="@dimen/fgt_medicine_next_paddingTop">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_reback_visit"/>
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="@string/fgt_medic_visit"/>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/right_beacon_marginRight"
+                        android:src="@drawable/ic_instructions_right"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

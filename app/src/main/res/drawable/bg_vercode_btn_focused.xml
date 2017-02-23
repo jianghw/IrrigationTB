@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 渐变 -->
+    <gradient
+        android:endColor="@color/activity_controls_gray"
+        android:gradientRadius="50"
+        android:startColor="@color/activity_controls_normal"
+        android:type="radial"/>
+
+    <!-- 圆角 -->
+    <corners android:radius="5dp"/>
+
+    <!-- 间隔  -->
+    <padding
+        android:bottom="5dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="5dp"/>
+
+</shape>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/include_pt_news"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_phone"
+            android:textSize="?attr/fontSize_1" />
+
+        <TextView
+            android:id="@+id/fm_news_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="?attr/fontSize_1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_location"
+            android:textSize="?attr/fontSize_1" />
+
+        <TextView
+            android:id="@+id/fm_news_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="?attr/fontSize_1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_id"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_card"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_qq"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_qq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_weixin"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_email"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_institution_name"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_institution_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_institution_coding"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_institution_coding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/module_segment_line_green" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suPatientNews_institution_location"
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+        <TextView
+            android:id="@+id/fm_news_institution_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text=""
+            android:textColor="@color/activity_textColor_black"
+            android:textSize="?attr/fontSize_2" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/module_segment_line_gray_shallow" />
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_background_gray"
+    tools:context=".patient.ui.main.PtMainActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_actionBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionBar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/activity_actionBar_black">
+
+        <TextView
+            android:id="@+id/tv_title_center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/activity_textColor_white"
+            android:textSize="?attr/fontSize_3"/>
+
+        <LinearLayout
+            android:id="@+id/rl_actionBar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imgView_separator"
+                android:layout_width="@dimen/activity_line_height"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/actionBar_line_marginTop"
+                android:layout_marginTop="@dimen/actionBar_line_marginTop"
+                android:background="@color/actionBar_line_black"/>
+
+            <ImageView
+                android:id="@+id/imgView_scan"
+                android:layout_width="@dimen/activity_actionBar_height"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_actionbar_all"
+                android:padding="16dp"
+                android:src="@drawable/ic_add_popup_main"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/flay_content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_actionBar"/>
+
+    <com.cjyun.tb.patient.custom.UITableBottom
+        android:id="@+id/tabBottom_pt_main"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/activity_controls_white"/>
+</RelativeLayout>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_me_qrCode"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fgt_me_rl_height"
+        android:layout_marginTop="@dimen/page_first_controls_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <ImageView
+            android:id="@+id/imgView_me_head"
+            android:layout_width="@dimen/fgt_me_img_height"
+            android:layout_height="@dimen/fgt_me_img_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_user_info_head"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:layout_toRightOf="@+id/imgView_me_head"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_me_account"
+                style="@style/MeContentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                tools:text="xiaoxiaodewo"/>
+
+            <TextView
+                android:id="@+id/tv_me_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/next_control_marginTop"
+                android:gravity="center_vertical"
+                android:textColor="@color/activity_hint_gray"
+                android:textSize="?attr/fontSize_1"
+                tools:text="ID:12345678"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgView_me_qrCode"
+            android:visibility="gone"
+            android:layout_width="@dimen/fgt_me_qrCode_height"
+            android:layout_height="@dimen/fgt_me_qrCode_height"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:layout_toLeftOf="@+id/img_instr_right"
+            android:src="@drawable/ic_me_qrcode"/>
+
+        <ImageView
+            android:id="@+id/img_instr_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_me_director"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginTop="@dimen/page_first_controls_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <ImageView
+            android:id="@+id/img_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_me_director"/>
+
+        <TextView
+            android:id="@+id/tv_me_dir"
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/img_director"
+            android:text="@string/fgt_me_director"/>
+
+        <ImageView
+            android:id="@+id/iv_director_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/tv_me_dir"
+            android:src="@drawable/ic_point_red"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/divider_line_marginLeft"
+        android:layout_marginRight="@dimen/divider_line_marginLeft"
+        android:background="@color/module_segment_line_gray"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_me_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+
+        <ImageView
+            android:id="@+id/img_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_message_me"/>
+
+        <TextView
+            android:id="@+id/tv_me_message"
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/img_box"
+            android:text="@string/fgt_me_boxManger"/>
+
+        <ImageView
+            android:id="@+id/iv_message_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/tv_me_message"
+            android:src="@drawable/ic_point_red"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/divider_line_marginLeft"
+        android:layout_marginRight="@dimen/divider_line_marginLeft"
+        android:background="@color/module_segment_line_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_me_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:background="@drawable/bg_me_control_white">
+
+        <ImageView
+            android:id="@+id/img_feedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_opinion_me"/>
+
+        <TextView
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/img_feedback"
+            android:text="@string/fgt_me_feedback"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_me_general"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_layout_height"
+        android:layout_marginTop="@dimen/page_second_module_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <ImageView
+            android:id="@+id/img_general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_me_general"/>
+
+        <TextView
+            android:id="@+id/tv_me_general"
+            style="@style/MeContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/img_general"
+            android:text="@string/fgt_me_general"/>
+
+        <ImageView
+            android:id="@+id/iv_me_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/big_btn_marginLeft"
+            android:layout_toRightOf="@+id/tv_me_general"
+            android:src="@drawable/ic_me_new"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/divider_line_marginLeft"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+
+</LinearLayout>

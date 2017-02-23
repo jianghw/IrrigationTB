@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <RelativeLayout
+                    android:id="@+id/relay_btn_prev"
+                    android:layout_width="@dimen/fgt_record_left_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_instructions_left" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/MedicineContentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/activity_textColor_black"
+                    tools:text="2016年4月" />
+
+                <RelativeLayout
+                    android:id="@+id/relay_btn_cur"
+                    android:layout_width="@dimen/fgt_record_left_width"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_instructions_right" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fgt_record_week_height"
+                android:background="@color/activity_backgroundColor_gray"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="日"
+                    android:textColor="@color/activity_textColor_gray" />
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="一" />
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="二" />
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="三" />
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="四" />
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="五" />
+
+                <TextView
+                    style="@style/MeContentText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="六"
+                    android:textColor="@color/activity_textColor_gray" />
+
+            </LinearLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_month"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fgt_record_date_height"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/module_segment_line_gray">
+
+                <TextView
+                    android:id="@+id/lr_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/activity_background_white"
+                    android:gravity="center"
+                    android:text="@string/suPatientNews_not_visit"
+                    android:textColor="@color/activity_textColor_black"
+                    android:textSize="?fontSize_1"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/lv_su_visit_events_show"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

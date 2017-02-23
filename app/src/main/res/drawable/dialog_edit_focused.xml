@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape >
+            <padding android:bottom="1dp"/>
+            <solid android:color="@color/activity_controls_normal" />
+        </shape>
+    </item>
+    <item>
+        <shape >
+            <solid android:color="@color/alert_edit_gray" />
+        </shape>
+    </item>
+</layer-list>

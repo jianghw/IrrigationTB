@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="isFont">
+        <attr name="fontSize_1" format="dimension" />
+        <attr name="fontSize_2" format="dimension" />
+        <attr name="fontSize_3" format="dimension" />
+    </declare-styleable>
+
+    <!--    自定义view userinfoText-->
+    <declare-styleable name="userInfoText">
+        <attr name="tvTitle" format="string" />
+        <attr name="tvContent" format="string" />
+        <attr name="tvSign" format="boolean" />
+        <attr name="endState">
+            <enum name="rect" value="1" />
+            <enum name="square" value="2" />
+            <enum name="circle" value="3" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <com.cjyun.tb.patient.custom.MonthGridView
+        android:id="@+id/gv_month"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fgt_record_date_height"
+        android:background="@color/activity_controls_white"
+        android:choiceMode="singleChoice"
+        android:gravity="center"
+        android:numColumns="7"
+        tools:listitem="@layout/item_gridview_month"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_popup"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fgt_me_img_height"
+        android:layout_marginTop="@dimen/page_second_module_marginTop"
+        android:background="@drawable/bg_me_control_white">
+
+        <TextView
+            android:id="@+id/tv_type"
+            style="@style/MedicineContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@color/activity_controls_normal"
+            android:padding="@dimen/right_beacon_marginRight"
+            tools:text="上门访视"/>
+
+        <TextView
+            android:id="@+id/tv_content"
+            style="@style/NormalText"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_type"
+            tools:text="小子我就不去随访你~~"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/right_beacon_marginRight"
+            android:src="@drawable/ic_instructions_right"/>
+    </RelativeLayout>
+</LinearLayout>
